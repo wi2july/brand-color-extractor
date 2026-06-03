@@ -108,3 +108,6 @@ tmp/
 .workbuddy/
 .meoo/
 .microcompact/
+
+# gh CLI binary
+gh

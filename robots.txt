@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://extractbrandcolors.com/sitemap.xml
+Sitemap: https://brand-color-extractor-gamma.vercel.app/sitemap.xml
