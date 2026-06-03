@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Primary Meta -->
+  <title>Extract Brand Colors from Image - Free Color Palette Generator | WCAG Compliant</title>
+  <meta name="description" content="Upload any image to instantly extract brand colors. Get your complete color palette with HEX, RGB, HSL values. Compliant with WCAG accessibility, FDA, and USPTO color standards. Free online tool.">
+  <meta name="keywords" content="extract brand colors, color palette from image, brand color extractor, WCAG color checker, image color picker, brand identity colors, color palette extractor, FDA color compliance">
+  <link rel="canonical" href="https://extractbrandcolors.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Extract Brand Colors from Image - Free Tool">
+  <meta property="og:description" content="Upload any image to instantly extract your brand color palette. WCAG, FDA & USPTO compliant.">
+  <meta property="og:image" content="https://extractbrandcolors.com/og-image.png">
+  <meta property="og:url" content="https://extractbrandcolors.com/">
+  <meta property="og:site_name" content="Extract Brand Colors">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Extract Brand Colors from Image - Free Tool">
+  <meta name="twitter:description" content="Upload any image to extract brand colors. WCAG compliant color palette generator.">
+  <meta name="twitter:image" content="https://extractbrandcolors.com/twitter-card.png">
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Extract Brand Colors",
+    "url": "https://extractbrandcolors.com",
+    "description": "Upload an image to automatically extract your brand color palette. Compliant with FDA, WCAG, and USPTO standards.",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Extract brand colors from any image",
+      "WCAG 2.1 accessibility compliance check",
+      "HEX, RGB, HSL color values",
+      "FDA color standards compliance",
+      "USPTO trademark color compliance",
+      "Export color palette"
+    ],
+    "screenshot": "https://extractbrandcolors.com/screenshot.png",
+    "creator": {
+      "@type": "Organization",
+      "name": "Extract Brand Colors",
+      "url": "https://extractbrandcolors.com"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I extract brand colors from an image?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply upload your image to our free tool. It automatically analyzes the image using advanced color quantization and extracts the dominant brand colors, giving you HEX, RGB, and HSL values instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is WCAG color compliance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WCAG (Web Content Accessibility Guidelines) color compliance ensures sufficient contrast ratios between text and background colors. Our tool checks if your brand colors meet WCAG 2.1 AA (4.5:1 ratio) and AAA (7:1 ratio) standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the brand color extractor free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Extract Brand Colors is completely free. No signup required. Upload your image and get your brand color palette instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What image formats are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We support JPG, PNG, WebP, GIF, SVG, and most common image formats. The tool processes images directly in your browser for privacy."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 (replace G-XXXXXXXXXX with your Measurement ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  </script>
+
+  <style>
+    /* 内联样式确保主题色立即生效，避免闪烁 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    html.light, html.light body {
+      background-color: #ffffff !important;
+      color: #000000;
+    }
+    html.dark, html.dark body {
+      background-color: #1a1a1a !important;
+      color: #ffffff;
+    }
+  </style>
+  <script>
+    // 在 React 加载前立即设置主题，避免闪烁
+    (function() {
+      const isInIframe = window.self !== window.top;
+
+      function applyThemeToDOM(theme) {
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(theme);
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+
+      if (isInIframe) {
+        // 监听父窗口主动推送的主题消息
+        window.addEventListener('message', function(event) {
+          if (event.data && typeof event.data.theme === 'string') {
+            const theme = event.data.theme;
+            if (theme === 'light' || theme === 'dark') {
+              applyThemeToDOM(theme);
+            }
+          }
+        });
+      } else {
+        // 非 iframe 环境，使用默认 light 主题
+        applyThemeToDOM('light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
