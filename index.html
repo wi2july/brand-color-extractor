@@ -8,8 +8,8 @@
   <meta name="msvalidate.01" content="EAC0CAD93A8F2FE81A4A59B223548E50" />
 
   <!-- Primary Meta -->
-  <title>Extract Brand Colors from Image - Free Color Palette Generator | WCAG Compliant</title>
-  <meta name="description" content="Upload any image to instantly extract brand colors. Get your complete color palette with HEX, RGB, HSL values. Compliant with WCAG accessibility, FDA, and USPTO color standards. Free online tool.">
+  <title>Extract Brand Colors from Image | Free Color Palette Tool</title>
+  <meta name="description" content="Upload an image to instantly extract brand colors. Get your palette with HEX, RGB, HSL values. Built-in WCAG accessibility check. Free online tool.">
   <meta name="keywords" content="extract brand colors, color palette from image, brand color extractor, WCAG color checker, image color picker, brand identity colors, color palette extractor, FDA color compliance">
   <link rel="canonical" href="https://brand-color-extractor-gamma.vercel.app/">
 
@@ -129,6 +129,18 @@
       background-color: #1a1a1a !important;
       color: #ffffff;
     }
+    /* SEO: visible to crawlers, hidden from view */
+    .sr-h1 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
   <script>
     // 在 React 加载前立即设置主题，避免闪烁
@@ -159,6 +171,7 @@
   </script>
 </head>
 <body>
+  <h1 class="sr-h1">Extract Brand Colors from Image - Free Online Color Palette Tool</h1>
   <div id="root"></div>
 </body>
 </html>
